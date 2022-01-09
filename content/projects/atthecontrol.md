@@ -1,6 +1,5 @@
 ---
 title: At The Control
-language: JavaScript
 link: https://atthecontrol.com
 ---
 I worked on this project when I was on my high school's robotics team, as the Application Development Lead.

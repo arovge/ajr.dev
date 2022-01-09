@@ -7,7 +7,7 @@ dotenv.config();
 module.exports = {
     siteMetadata: {
         title: "Austin Rovge",
-        description: "Hi! I'm a software engineer located in Milwaukee, WI. I'm working hard at learning new skills!",
+        description: "Hi! I'm a software engineer in Milwaukee, WI. I'm working hard at learning new skills!",
         author: "@austinrovge"
     },
     plugins: [
@@ -58,5 +58,8 @@ module.exports = {
                     })
             }
         }
-    ]
+    ],
+    flags: {
+        DEV_SSR: false
+    }
 };

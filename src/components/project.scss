@@ -48,36 +48,6 @@
                 position: relative;
                 margin-left: 5px;
                 border: solid 1px rgba(0, 0, 0, 0.15);
-
-                &.c { background-color: #555555; }
-
-                &.csharp { background-color: #178600; }
-          
-                &.cplusplus { background-color: #F34B7D; }
-                
-                &.css { background-color: #563D7C; }
-                
-                &.dart { background-color: #00B4AB; }
-                
-                &.html { background-color: #E34C26; }
-                
-                &.java { background-color: #B07219; }
-                
-                &.javascript { background-color: #F1E05A; }
-                
-                &.kotlin { background-color: #F18E33; }
-                
-                &.python { background-color: #3572A5; }
-                
-                &.rust { background-color: #DEA584; }
-                
-                &.swift { background-color: #FFAC45; }
-                
-                &.typescript { background-color: #2B7489; }
-                
-                &.vue { background-color: #2C3E50; }
-                
-                &.webassembly { background-color: #04133B; }
             }
         }
     }

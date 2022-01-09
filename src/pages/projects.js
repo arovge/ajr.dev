@@ -1,10 +1,46 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 import Project from "../components/project";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-export default function Projects({ data: { github: { viewer: { pinnedItems }}, allMarkdownRemark: { edges }}}) {
+export default function Projects() {
+    const { github: { viewer: { pinnedItems }}, allMarkdownRemark: { edges }} = useStaticQuery(graphql`
+        query {
+            allMarkdownRemark {
+                edges {
+                    node {
+                      rawMarkdownBody
+                      frontmatter {
+                        title
+                        link
+                      }
+                    }
+                }
+            }
+            
+            github {
+                viewer {
+                    pinnedItems(first: 6) {
+                        edges {
+                            node {
+                                ... on GitHub_Repository {
+                                    name
+                                    url
+                                    description
+                                    primaryLanguage {
+                                        name
+                                        color
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    `);
+
     return (
         <Layout>
             <SEO title="Projects" />
@@ -17,9 +53,9 @@ export default function Projects({ data: { github: { viewer: { pinnedItems }}, a
                     <Project
                         key={i}
                         href={url}
-                        name={name}
-                        language={primaryLanguage ? primaryLanguage.name : ""}
-                        description={description}
+                        language={primaryLanguage.name}
+                        color={primaryLanguage.color}
+                        {...{name, description}}
                     />
                 ))}
                 {edges.map(({ node: { rawMarkdownBody, frontmatter: { link, title, language }}}, i) => (
@@ -27,47 +63,11 @@ export default function Projects({ data: { github: { viewer: { pinnedItems }}, a
                         key={i}
                         href={link}
                         name={title}
-                        language={language}
                         description={rawMarkdownBody}
+                        {...{language}}
                     />
                 ))}
             </div>
         </Layout>
     );
 }
-
-export const projectsQuery = graphql`
-    query {
-        allMarkdownRemark {
-            edges {
-                node {
-                  rawMarkdownBody
-                  frontmatter {
-                    title
-                    language
-                    link
-                  }
-                }
-            }
-        }
-        
-        github {
-            viewer {
-                pinnedItems(first: 6) {
-                    edges {
-                        node {
-                            ... on GitHub_Repository {
-                                name
-                                url
-                                description
-                                primaryLanguage {
-                                    name
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-`;
