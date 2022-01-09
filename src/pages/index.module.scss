@@ -1,4 +1,4 @@
-.summary-block {
+.summary {
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
@@ -6,7 +6,7 @@
     padding: 0 0 0.5em 0;
     margin-bottom: 1em;
 
-    .photo-circle {
+    > :not(.text) {
         border-radius: 100%;
         margin: 0 1.5em 1em 0;
         width: 100%;
@@ -21,9 +21,7 @@
 }
 
 @media screen and (max-width: 58em) {
-    .photo-block {
-        .photo-circle {
-            width: 10em;
-        }
+    .summary > :not(.text) {
+        width: 10em;
     }
 }

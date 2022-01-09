@@ -48,7 +48,7 @@ export default function Projects() {
             <div>
                 <p>This isn't all of my projects that I've worked on, just some that I like!</p>
             </div>
-            <div className="projects">
+            <div>
                 {pinnedItems.edges.map(({ node: { url, name, primaryLanguage, description }}, i) => (
                     <Project
                         key={i}
