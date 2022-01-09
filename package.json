@@ -1,7 +1,7 @@
 {
   "name": "ajr.dev",
   "version": "0.0.1",
-  "description": "My personal website, built using GatsbyJS.",
+  "description": "My personal website",
   "scripts": {
     "lint": "eslint ./src",
     "lint:fix": "eslint ./src --fix",
@@ -24,11 +24,11 @@
     "gatsby-source-graphql": "^3.7.1",
     "gatsby-transformer-remark": "^4.4.1",
     "gatsby-transformer-sharp": "^3.7.1",
-    "node-sass": "^6.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "sass": "^1.47.0"
   },
   "devDependencies": {},
   "repository": {
