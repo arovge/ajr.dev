@@ -1,19 +1,17 @@
-import React from "react";
-import "./project.scss";
+import React from 'react';
+import ExternalAnchorTag from './externalAnchorTag';
+import * as styles from './project.module.scss';
 
-const sanitizeLanguage = (language) =>
-    language.toLowerCase().replace("#", "sharp").replace(/\+/g, "plus");
-
-export default function Project({ url, language, name, description }) {
-    const link = url ? url : `https://gitlab.com/rovge/${name}`;
-
+export default function Project({ href, language, name, description, color }) {
     return (
-        <div className="project">
-            <a href={link} rel="noopener noreferrer" target="_blank">{name}</a>
-            <span className="language">
-                <span className="text">{language}</span>
-                <span className={`indicator ${sanitizeLanguage(language)}`}/>
-            </span>
+        <div className={styles.project}>
+            <ExternalAnchorTag {...{href}}>{name}</ExternalAnchorTag>
+            {color &&
+                <span>
+                    <span className={styles.text}>{language}</span>
+                    <span className={styles.indicator} style={{ backgroundColor: color }} />
+                </span>
+            }
             <div>
                 <p>{description}</p>
             </div>

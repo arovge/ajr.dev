@@ -3,16 +3,15 @@
     flex-wrap: wrap;
     justify-content: flex-start;
 
-    .photo {
+    img {
         width: 20em;
-        margin-bottom: 15px;
-        margin-right: 15px;
+        border-radius: 0.5em;
+    }
 
-        .gatsby-image-wrapper {
-            img {
-                border-radius: 0.5em;
-            }
-        }
+    > div {
+        width: 20em;
+        margin-bottom: 1em;
+        margin-right: 1em;
 
         h2 {
             margin: 0.25em 0 0;

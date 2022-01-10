@@ -1,12 +1,12 @@
-# austinrovge.dev
+# ajr.dev
 This project is my personal site! It's built using GatsbyJS.
 
 ### Installation
 The project needs to be cloned and the node modules need to be installed.
 
 ``` bash
-$ git clone https://github.com/rovge/austinrovge.dev.git
-$ cd austinrovge.dev
+$ git clone https://github.com/austinrovge/ajr.dev.git
+$ cd ajr.dev
 $ yarn
 ```
 
@@ -19,20 +19,22 @@ Before doing any development, you'll need to make a personal access token from G
 
 Make sure you don't commit the access token to a project repository or share it anywhere else.
 
-The inside of the `.env` file should have one line like this:
+The `.env` file should define an evironment variable called `GITHUB_PERSONAL_ACCESS_TOKEN` equal to the value of the token generated above.
+
+Example:
 
 ```
-GITHUB_TOKEN=12345
+GITHUB_PERSONAL_ACCESS_TOKEN=12345
 ```
 
-Make sure you replace `12345` with your access token. Ideally it will be more complex than the combination on your luggage.
+Hopefully the access token from GitHub will be more complex than the combination on your luggage.
 
 ##### Development
 
 Gatsby will build a development version of the site and serve the files out by running:
 
 ``` bash
-$ yarn dev
+$ yarn start
 ```
 
 ##### Production
@@ -40,7 +42,7 @@ $ yarn dev
 A production build can be created and served on port 9000 using:
 
 ```bash
-$ yarn prod
+$ yarn build
 $ yarn serve
 ```
 

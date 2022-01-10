@@ -1,17 +1,16 @@
-import React from "react";
-import { Link } from "gatsby";
-import "./header.scss";
+import React from 'react';
+import { Link } from 'gatsby';
+import * as styles from './header.module.scss';
 
 export default function Header() {
     return (
-        <header className="header">
-            <div className="inner">
+        <header className={styles.header}>
+            <div>
                 <h1>Austin Rovge</h1>
-                <nav className="links">
-                    <Link to="/">About</Link>
-                    <Link to="/projects">Projects</Link>
-                    <Link to="/photography">Photography</Link>
-                    <Link to="/experience">Experience</Link>
+                <nav className={styles.links}>
+                    <Link to='/'>About</Link>
+                    <Link to='/projects'>Projects</Link>
+                    <Link to='/photography'>Photography</Link>
                 </nav>
             </div>
         </header>
