@@ -5,23 +5,17 @@
     border-bottom: 1px solid hsla(0, 0%, 76.1%, .5);
     padding: 0 0 0.5em 0;
     margin-bottom: 1em;
-
-    > :not(.text) {
-        border-radius: 100%;
-        margin: 0 1.5em 1em 0;
-        width: 100%;
-        max-width: 8em;
-
-        &.gatsby-image-wrapper {
-            img {
-                border-radius: 50%;
-            }
-        }
-    }
 }
 
-@media screen and (max-width: 58em) {
-    .summary > :not(.text) {
-        width: 10em;
+.photo {
+    border-radius: 100%;
+    margin: 0 1.5em 1em 0;
+    width: 100%;
+    max-width: 8em;
+
+    &.gatsby-image-wrapper {
+        img {
+            border-radius: 50%;
+        }
     }
 }
