@@ -1,6 +1,6 @@
-import React from "react";
-import ExternalAnchorTag from "./externalAnchorTag";
-import * as styles from "./project.module.scss";
+import React from 'react';
+import ExternalAnchorTag from './externalAnchorTag';
+import * as styles from './project.module.scss';
 
 export default function Project({ href, language, name, description, color }) {
     return (

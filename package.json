@@ -30,7 +30,9 @@
     "react-helmet": "^6.1.0",
     "sass": "^1.47.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-eslint": "^10.1.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/austinrovge/ajr.dev.git"

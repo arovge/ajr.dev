@@ -1,8 +1,8 @@
-import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import Project from "../components/project";
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import React from 'react';
+import { graphql, useStaticQuery } from 'gatsby';
+import Project from '../components/project';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 export default function Projects() {
     const { github: { viewer: { pinnedItems }}, allMarkdownRemark: { edges }} = useStaticQuery(graphql`
@@ -43,7 +43,7 @@ export default function Projects() {
 
     return (
         <Layout>
-            <SEO title="Projects" />
+            <SEO title='Projects' />
             <h1>Here's some stuff I've worked on.</h1>
             <div>
                 <p>This isn't all of my projects that I've worked on, just some that I like!</p>
