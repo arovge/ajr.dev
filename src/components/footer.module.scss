@@ -1,5 +1,4 @@
 .footer {
-    background-color: #fff;
     position: relative;
     padding-bottom: 20px;
     margin: 0 auto;
@@ -10,11 +9,11 @@
 
     a {
         transition-duration: 0.2s;
-        fill: rgba(0, 0, 0, 0.3);
+        fill: var(--icon);
         margin-right: 1.5em;
 
         &:hover {
-            fill: rgba(0, 0, 0, 0.5);
+            fill: var(--icon-color-hover);
         }
     }
 }
