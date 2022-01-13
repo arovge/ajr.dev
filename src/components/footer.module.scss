@@ -9,8 +9,8 @@
 
     a {
         transition-duration: 0.2s;
-        fill: var(--icon);
         margin-right: 1.5em;
+        fill: var(--icon-color);
 
         &:hover {
             fill: var(--icon-color-hover);
