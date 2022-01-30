@@ -11,16 +11,17 @@ export default function Index() {
             <SEO title='About' />
             <div className={styles.summary}>
                 <StaticImage className={styles.photo} src='../../images/austin.jpg' alt='A nice picture of me!' />
-                <div className={styles.text}>
+                <div>
                     <p>Hi, I'm Austin! I'm a software engineer and I love learning more about programming!</p>
                     <p>This website has some projects I've worked on and pictures I've taken, but I mostly use it to try out new web technologies!</p>
                 </div>
             </div>
             <h1>Here's a little bit about me.</h1>
             <div>
-                <p>I first started programming in middle school when I discovered the <ExternalAnchorTag href='https://www.codecademy.com/learn/introduction-to-javascript'>Codeacademy course on JavaScript</ExternalAnchorTag>. Within an hour of starting the course, I was proudly showing my mom the basic for loops I made!</p>
+                <p>I first started programming in middle school when I discovered the Codeacademy course on JavaScript. Within an hour of starting the course, I was proudly showing my mom the basic for loops I made!</p>
                 <p>In high school, I joined robotics to help program robots in C++, but I ended up switching gears and helping out with the team's web team. I helped work on <ExternalAnchorTag href='https://atthecontrol.com'>At The Control</ExternalAnchorTag>, a streaming service for <ExternalAnchorTag href='https://www.firstinspires.org/robotics/frc'>FIRST Robotics Competition</ExternalAnchorTag> events.</p>
-                <p>After graduating from high school, I went to the <ExternalAnchorTag href='https://www.msoe.edu'>Milwaukee School of Engineering</ExternalAnchorTag> to major in software engineering. Now I mostly work on native mobile apps and cloud services!</p>
+                <p>After graduating from high school, I went to the <ExternalAnchorTag href='https://www.msoe.edu'>Milwaukee School of Engineering</ExternalAnchorTag> to major in software engineering.</p>
+                <p>Now I spent my time by staying involved in FIRST Robotics, native mobile development, and cloud services!</p>
             </div>
         </Layout>
     );

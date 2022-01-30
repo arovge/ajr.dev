@@ -1,5 +1,6 @@
 .summary {
     display: flex;
+    flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
     border-bottom: 1px solid hsla(0, 0%, 76.1%, .5);
@@ -14,9 +15,13 @@
     max-width: 8em;
     border: var(--light-border);
 
-    &.gatsby-image-wrapper {
-        img {
-            border-radius: 50%;
-        }
+    * {
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 36em) {
+    .summary {
+        flex-direction: column;
     }
 }
