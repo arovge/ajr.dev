@@ -1,7 +1,7 @@
 import React from 'react';
 
-export default function ExternalAnchorTag({ href, children }) {
+export default function ExternalAnchorTag({ href, children, className }) {
     return (
-        <a rel='noopener noreferrer' target='_blank' {...{href}}>{children}</a>
+        <a rel='noopener noreferrer' target='_blank' {...{href, className}}>{children}</a>
     );
 }

@@ -1,11 +1,10 @@
 .footer {
     position: relative;
-    padding-bottom: 20px;
     margin: 0 auto;
-    padding: 0 1.5em;
+    padding: 0 1.5em 3em;
     display: flex;
     align-items: center;
-    max-width: 54rem;
+    max-width: var(--content-width);
 
     a {
         transition-duration: 0.2s;
@@ -18,9 +17,12 @@
     }
 }
 
-@media screen and (max-width: 58em) {
-    .footer {
-        max-width: 36rem;
-    }
+.mail {
+    margin-top: 0.5em;
 }
 
+@media screen and (max-width: 58em) {
+    .footer {
+        max-width: var(--content-width);
+    }
+}

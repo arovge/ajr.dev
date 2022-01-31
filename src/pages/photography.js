@@ -6,21 +6,7 @@ import SEO from '../components/seo';
 import * as styles from './photography.module.scss';
 
 export default function Photography() {
-    const { photos: { edges }} = useStaticQuery(graphql`
-        query {
-            photos: allFile(filter: { relativeDirectory: {regex: "/([a-zA-Z])/" }}) {
-                edges {
-                    node {
-                        name
-                        relativePath
-                        childImageSharp {
-                            gatsbyImageData
-                        }
-                    }
-                }
-            }
-        }
-    `);
+    const { photos: { edges }} = useStaticQuery(photosQuery);
 
     return (
         <Layout>
@@ -38,3 +24,19 @@ export default function Photography() {
         </Layout>
     );
 }
+
+const photosQuery = graphql`
+    query {
+        photos: allFile(filter: { relativeDirectory: {regex: "/([a-zA-Z])/" }}) {
+            edges {
+                node {
+                    name
+                    relativePath
+                    childImageSharp {
+                        gatsbyImageData
+                    }
+                }
+            }
+        }
+    }
+`;

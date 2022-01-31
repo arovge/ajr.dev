@@ -1,13 +1,13 @@
 .content {
-    max-width: 54rem;
+    max-width: var(--content-width);
     margin: 2em auto 2em auto;
     padding: 0 1em;
   
     a {
-        color: #2377BE;
+        color: var(--link-color);
   
         &:hover {
-            color: #548EBE;
+            color: var(--link-color-hover);
         }
     }
   
@@ -22,6 +22,6 @@
 
 @media screen and (max-width: 58em) {
     .content {
-        max-width: 36rem;
+        max-width: var(--content-width);
     }
 }

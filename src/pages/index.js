@@ -21,7 +21,7 @@ export default function Index() {
                 <p>I first started programming in middle school when I discovered the Codeacademy course on JavaScript. Within an hour of starting the course, I was proudly showing my mom the basic for loops I made!</p>
                 <p>In high school, I joined robotics to help program robots in C++, but I ended up switching gears and helping out with the team's web team. I helped work on <ExternalAnchorTag href='https://atthecontrol.com'>At The Control</ExternalAnchorTag>, a streaming service for <ExternalAnchorTag href='https://www.firstinspires.org/robotics/frc'>FIRST Robotics Competition</ExternalAnchorTag> events.</p>
                 <p>After graduating from high school, I went to the <ExternalAnchorTag href='https://www.msoe.edu'>Milwaukee School of Engineering</ExternalAnchorTag> to major in software engineering.</p>
-                <p>Now I spent my time by staying involved in FIRST Robotics, native mobile development, and cloud services!</p>
+                <p>Now I spent my time by staying involved in FIRST Robotics and doing cloud/mobile development!</p>
             </div>
         </Layout>
     );
