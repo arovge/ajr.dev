@@ -10,7 +10,7 @@ export default function Index() {
         <Layout>
             <SEO title='About' />
             <div className={styles.summary}>
-                <StaticImage className={styles.photo} src='../../images/austin.jpg' alt='A nice picture of me!' />
+                <StaticImage className={styles.photo} src='../images/austin.jpg' alt='A nice picture of me!' />
                 <div>
                     <p>Hi, I'm Austin! I'm a software engineer and I love learning more about programming!</p>
                     <p>This website has some projects I've worked on and pictures I've taken, but I mostly use it to try out new web technologies!</p>
