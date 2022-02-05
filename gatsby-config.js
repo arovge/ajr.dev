@@ -26,21 +26,21 @@ module.exports = {
                 background_color: "#2377BE",
                 theme_color: "#2377BE",
                 display: "minimal-ui",
-                icon: `${__dirname}/src/static/favicon.png`
+                icon: "static/favicon.png"
             }
         },
         {
             resolve: "gatsby-source-filesystem",
             options: {
                 name: "images",
-                path: `${__dirname}/src/images`
+                path: `${__dirname}/images`
             }
         },
         {
             resolve: "gatsby-source-filesystem",
             options: {
                 name: "projects",
-                path: `${__dirname}/src/content/projects`
+                path: `${__dirname}/content/projects`
             }
         },
         {
