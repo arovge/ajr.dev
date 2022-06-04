@@ -13,7 +13,7 @@ export default function Index() {
                 <StaticImage className={styles.photo} src='../../images/austin.jpg' alt='A nice picture of me!' />
                 <div>
                     <p>Hi, I'm Austin! I'm a software engineer and I love learning more about programming!</p>
-                    <p>This website has some projects I've worked on and pictures I've taken, but I mostly use it to try out new web technologies!</p>
+                    <p>This website has some information about me and pictures I've taken, but I mostly use it to try out new web technologies!</p>
                 </div>
             </div>
             <h1>Here's a little bit about me.</h1>

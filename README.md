@@ -12,8 +12,6 @@ $ cd ajr.dev
 $ yarn
 ```
 
-The site relies on talking to GitHub's GraphQL API which requires an access token from GitHub. Read the [GitHub API Key section of the README](https://github.com/austinrovge/ajr.dev#github-api-key) to know how to do this. Without this token, the projects on the static site won't by dynamically populated.
-
 A local development server can be started on port `8000` by running:
 
 ```bash
@@ -32,23 +30,3 @@ This will build create the `public` directory and put the production static asse
 ### Deployment
 
 Currently the project is deployed with Cloudflare Pages. A development site is created for each pull request and the production site is updated when that pull request is merged into `main`.
-
-##### GitHub API Key
-
-On build, the site makes a GraphQL call out to GitHub to get my pinned repositories that it then renders as static content. It needs an access token from GitHub to do this.
-
-Before doing any development, you'll need to make a personal access token from GitHub and add it to a file named `.env` in the project root directory.
-
-[Here's steps from GitHub on generating your own personal access token.](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) The token doesn't need any of the extra permissions boxes checked in order to talk to the GitHub GraphQL API.
-
-Make sure you don't commit the access token to a project repository or share it anywhere else.
-
-The `.env` file should define an evironment variable called `GITHUB_PERSONAL_ACCESS_TOKEN` equal to the value of the token generated above.
-
-Example:
-
-```
-GITHUB_ACCESS_TOKEN=12345
-```
-
-Hopefully the access token from GitHub will be more complex than the combination on your luggage.

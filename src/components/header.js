@@ -10,7 +10,6 @@ export default function Header() {
                 <h1>Austin Rovge</h1>
                 <nav className={styles.links}>
                     <Link to='/'>About</Link>
-                    <Link to='/projects'>Projects</Link>
                     <Link to='/photography'>Photography</Link>
                     <ExternalAnchorTag href='https://api.ajr.dev/files/austin-rovge-resume.pdf'>Resume</ExternalAnchorTag>
                 </nav>
