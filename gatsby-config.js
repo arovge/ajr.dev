@@ -1,9 +1,3 @@
-const fetch = require("node-fetch");
-const { createHttpLink } = require("apollo-link-http");
-const dotenv = require("dotenv");
-
-dotenv.config();
-
 module.exports = {
     siteMetadata: {
         title: "Austin Rovge",
@@ -34,28 +28,6 @@ module.exports = {
             options: {
                 name: "images",
                 path: `${__dirname}/images`
-            }
-        },
-        {
-            resolve: "gatsby-source-filesystem",
-            options: {
-                name: "projects",
-                path: `${__dirname}/content/projects`
-            }
-        },
-        {
-            resolve: "gatsby-source-graphql",
-            options: {
-                fieldName: "github",
-                typeName: "GitHub",
-                createLink: () =>
-                    createHttpLink({
-                        uri: "https://api.github.com/graphql",
-                        headers: {
-                            Authorization: `Bearer ${process.env.GITHUB_ACCESS_TOKEN}`,
-                        },
-                        fetch,
-                    })
             }
         }
     ],
