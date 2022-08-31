@@ -1,4 +1,4 @@
-.header {
+header {
     padding-top: 1em;
     padding-bottom: 1em;
     background-color: #2377BE;
@@ -16,7 +16,7 @@
     }
 }
 
-.links {
+nav {
     margin-top: 10px;
     font-size: 1.25em;
 
@@ -29,9 +29,7 @@
 }
 
 @media screen and (max-width: 58em) {
-    .header {
-        .inner {
-            max-width: var(--content-width);
-        }
+    header > div {
+        max-width: var(--content-width);
     }
 }

@@ -1,4 +1,4 @@
-.footer {
+footer {
     position: relative;
     margin: 0 auto;
     padding: 0 1.5em 3em;
@@ -15,14 +15,14 @@
             fill: var(--icon-color-hover);
         }
     }
-}
 
-.mail {
-    margin-top: 0.5em;
+    .mail {
+        margin-top: 0.5em;
+    }
 }
 
 @media screen and (max-width: 58em) {
-    .footer {
+    footer {
         max-width: var(--content-width);
     }
 }

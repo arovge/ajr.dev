@@ -6,26 +6,22 @@
     border-bottom: 1px solid hsla(0, 0%, 76.1%, .5);
     padding: 0 0 0.5em 0;
     margin-bottom: 1em;
-}
 
-.photo {
-    border-radius: 100%;
-    margin: 0 1.5em 1em 0;
-    width: 100%;
-    max-width: 8em;
-    border: var(--light-border);
-
-    * {
+    img {
         border-radius: 50%;
+        margin: 0 1.5em 1em 0;
+        width: 100%;
+        max-width: 8em;
+        border: var(--light-border);
     }
 }
 
 @media screen and (max-width: 36em) {
     .summary {
         flex-direction: column;
-    }
 
-    .photo {
-        margin: 0 0 2em;
+        img {
+            margin: 0 0 2em;
+        }
     }
 }
