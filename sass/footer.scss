@@ -1,4 +1,4 @@
-.footer {
+footer {
     position: relative;
     margin: 0 auto;
     padding: 0 1.5em 3em;
@@ -22,7 +22,7 @@
 }
 
 @media screen and (max-width: 58em) {
-    .footer {
+    footer {
         max-width: var(--content-width);
     }
 }
