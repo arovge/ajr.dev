@@ -1,3 +1,0 @@
-+++
-template = "photography.html"
-+++
