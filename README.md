@@ -1,19 +1,10 @@
 # ajr.dev
 
-This is my personal website. It's built using Zola and served with Cloudflare Pages.
+This is my personal website. It used to use a lot of frameworks, but I realized I didn't need the complexity or high maintainability cost that comes with modern web dev for this.
 
 ### Development
 
-The project needs to be cloned the repository and have node module downloaded:
-
-```bash
-$ git clone https://github.com/austinrovge/ajr.dev.git
-$ cd ajr.dev
-$ zola serve
-```
-
-This will build the project and serve the `public` folder out of port `1111`.
-
+This project is very barebones. After cloning, open the html file in your web browser to view the website. After making a change to HTML/CSS, refresh your web browser to see the changes.
 
 ### Deployment
 
