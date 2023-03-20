@@ -69,6 +69,7 @@ a:hover {
 
 .links p {
     margin-bottom: 1em;
+    display: flex;
 }
 
 .links p:last-child {
@@ -76,6 +77,6 @@ a:hover {
 }
 
 .links .indent {
-    margin-right: 1em;
+    margin-right: 0.5em;
     color: var(--indent-color);
 }
