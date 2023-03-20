@@ -51,6 +51,7 @@ a:hover {
 
 .container {
     height: 100vh;
+    width: 70vw;
     margin: 2em auto 1em;
     padding: 2em;
 }
