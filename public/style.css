@@ -3,7 +3,6 @@
 :root {
     --body-bg-color: #ffffff;
     --text-color: #212121;
-    --content-width: 54rem;
     --primary-color: #2377BE;
     --primary-color-hover: #548EBE;
     --indent-color: rgba(154, 154, 154, 0.5);
@@ -23,19 +22,15 @@
     color: var(--text-color);
 }
 
-html, body {
-    font-size: 16px;
-    height: 100%;
-    min-height: 100%;
-}
-
 html {
-    overflow: scroll;
-    overflow-x: hidden;
+    font-size: 16px;
 }
 
 body {
     margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
     background-color: var(--body-bg-color);
     display: flex;
     flex-direction: column;
@@ -58,41 +53,19 @@ a:hover {
 
 .container {
     height: 100vh;
-    width: 100vw;
-    max-width: var(--content-width);
-    margin: 4em auto 1em;
+    margin: 2em auto 1em;
+    padding: 2em;
 }
 
 .content {
     margin-bottom: 1em;
 }
 
-@media screen and (max-width: 58em) {
-    .content {
-        margin: 2em 0;
-    }
-}
-
 .content h1 {
     margin-bottom: 0.5em;
 }
 
-/* footer */
-
-.links {
-    position: relative;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    max-width: var(--content-width);
-}
-
-@media screen and (max-width: 58em) {
-    .links {
-        max-width: var(--content-width);
-    }
-}
+/* links */
 
 .links p {
     margin-bottom: 1em;
