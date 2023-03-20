@@ -1,184 +1,82 @@
-/* root.css */
-
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.5);
-}
+/* root */
 
 :root {
     --body-bg-color: #ffffff;
     --text-color: #212121;
-    --icon-color: rgba(0, 0, 0, 0.3);
-    --icon-color-hover: rgba(0, 0, 0, 0.5);
-    --light-border: solid 1px rgba(0, 0, 0, 0.15);
-    --project-bg-color: rgba(0, 0, 0, 0.1);
-    --content-width: 54rem;
-    --link-color: #2377BE;
-    --link-color-hover: #548EBE;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "system-ui", sans-serif;
-    color: var(--text-color);
-}
-
-body, html {
-    font-size: 16px;
-    height: 100%;
-    min-height: 100%;
-}
-
-body {
-    margin: 0;
-    background-color: var(--body-bg-color);
-    -webkit-text-size-adjust: none;
-}
-
-html {
-    overflow: scroll;
-    overflow-x: hidden;
-}
-
-a {
-    transition-duration: 0.2s;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
-}
-
-a:hover {
-    color: #f7f7f7;
+    --primary-color: #2377BE;
+    --primary-color-hover: #548EBE;
+    --indent-color: rgba(154, 154, 154, 0.5);
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --body-bg-color: #212121;
         --text-color: #dedede;
-        --icon-color: rgba(255, 255, 255, 0.3);
-        --icon-color-hover: rgba(255, 255, 255, 0.5);
-        --light-border: solid 1px hsla(0, 0%, 76.1%, .25);
-        --project-bg-color: rgba(0, 0, 0, 0.2);
     }
 }
 
-/* about.css */
-
-.summary {
-    border-bottom: 1px solid hsla(0, 0%, 76.1%, .5);
-    padding: 0 0 0.5em 0;
-    margin-bottom: 1em;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Merriweather, Georgia, serif;
+    color: var(--text-color);
 }
 
-@media screen and (max-width: 36em) {
-    .summary {
-        flex-direction: column;
-    }
-
-    .summary img {
-        margin: 0 0 2em;
-    }
+html {
+    font-size: 16px;
 }
 
-/* content.css */
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--body-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    transition-duration: 0.2s;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--primary-color-hover);
+}
+
+/* content */
+
+.container {
+    height: 100vh;
+    margin: 2em auto 1em;
+    padding: 2em;
+}
 
 .content {
-    max-width: var(--content-width);
-    margin: 2em auto;
-    padding: 0 1em;
-}
-
-.content a {
-    color: var(--link-color);
-}
-
-.content a:hover {
-    color: var(--link-color-hover);
+    margin-bottom: 1em;
 }
 
 .content h1 {
     margin-bottom: 0.5em;
 }
 
-.content p {
-    padding-bottom: 1em;
-}
+/* links */
 
-@media screen and (max-width: 58em) {
-    .content {
-        margin: 2em 0;
-    }
-}
-
-/* footer.css */
-
-footer {
-    position: relative;
-    margin: 0 auto;
-    padding: 0 1.5em 3em;
+.links p {
+    margin-bottom: 1em;
     display: flex;
-    align-items: center;
-    max-width: var(--content-width);
 }
 
-footer a {
-    transition-duration: 0.2s;
-    margin-right: 1.5em;
-    fill: var(--icon-color);
+.links p:last-child {
+    margin-bottom: 0;
 }
 
-footer a:hover {
-    fill: var(--icon-color-hover);
-}
-
-footer .mail {
-    margin-top: 0.5em;
-}
-
-@media screen and (max-width: 58em) {
-    footer {
-        max-width: var(--content-width);
-    }
-}
-
-/* header.css */
-
-header {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    background-color: #2377BE;
-}
-
-header > div {
-    margin: 0 auto;
-    padding: 0 1.5em;
-    max-width: var(--content-width);
-}
-
-header > div h1 {
-    font-weight: 900;
-    font-size: 2em;
-    color: #f7f7f7;
-}
-
-nav {
-    margin-top: 10px;
-    font-size: 1.25em;
-}
-
-nav a {
-    width: auto;
-    display: inline-block;
-    font-weight: 900;
-    margin-right: 15px;
-}
-
-@media screen and (max-width: 58em) {
-    header > div {
-        max-width: var(--content-width);
-    }
+.links .indent {
+    margin-right: 0.5em;
+    color: var(--indent-color);
 }
