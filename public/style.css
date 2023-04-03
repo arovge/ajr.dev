@@ -31,7 +31,7 @@ body {
     background-color: var(--body-bg-color);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -48,8 +48,7 @@ a:hover {
 /* content */
 
 .container {
-    height: calc(100vh - 1rem);
-    margin: 2rem auto 1rem;
+    margin-top: 2rem;
     padding: 2rem;
 }
 
