@@ -65,7 +65,7 @@ a:hover {
 
 /* links */
 
-.links p * {
+.links p span, .links p span a {
     font-family: monospace;
 }
 
