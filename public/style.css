@@ -79,7 +79,7 @@ a:hover {
     margin-bottom: 0;
 }
 
-.links p .indent {
+.links p .bullet {
     margin-right: 0.8rem;
     color: var(--indent-color);
 }
