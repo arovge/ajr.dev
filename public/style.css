@@ -1,8 +1,8 @@
 :root {
     --body-bg-color: #ffffff;
     --text-color: #212121;
-    --primary-color: #2377BE;
-    --indent-color: rgba(154, 154, 154, 0.5);
+    --primary-color: #12751f;
+    --indent-color: #9a9a9a80;
 }
 
 @media (prefers-color-scheme: dark) {
