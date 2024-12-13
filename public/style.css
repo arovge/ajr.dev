@@ -1,7 +1,7 @@
 :root {
     --body-bg-color: #ffffff;
     --text-color: #212121;
-    --primary-color: #2377BE;
+    --primary-color: #2377be;
     --indent-color: rgba(154, 154, 154, 0.5);
 }
 
@@ -83,4 +83,3 @@ a:hover {
     margin-right: 0.8rem;
     color: var(--indent-color);
 }
-
